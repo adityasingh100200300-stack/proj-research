@@ -1,4 +1,10 @@
 Sentinel Hub API: Free/paid access to Sentinel-2 (10m resolution) imagery. Pull time-series NDVI (vegetation index), NDWI (water), and SAR data via their Python SDK (sentinelhub-py).
+
+
 Drone imagery: Standardize flight paths (DJI SDK or Pix4D for orthomosaic stitching) so imagery is geo-referenced consistently across survey dates.
+
+
 IoT sensors: Soil moisture, pH, and water sensors reporting over LoRaWAN/MQTT to a broker (e.g., AWS IoT Core or a self-hosted Mosquitto), writing to a time-series DB (InfluxDB/TimescaleDB).
+
+
 Store everything with geospatial tags in PostGIS so all three sources are queryable by location/time.

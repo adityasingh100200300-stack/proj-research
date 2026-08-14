@@ -1,3 +1,7 @@
 Chain choice: Polygon (public, cheap gas, EVM-compatible) is easier to build and audit than Hyperledger (permissioned, more setup, better if MoES needs private/consortium control). Many real carbon-credit platforms (Toucan, KlimaDAO) use Polygon for exactly this reason.
+
+
 Smart contract: An ERC-1155 or custom token standard where each token = 1 tonne CO2, minted only after an oracle (your AI service) submits a signed verification result. Use Chainlink or a custom oracle to bridge off-chain ML output on-chain trustlessly.
+
+
 Include a registry contract mapping project ID → land geo-boundary hash → verification history, so credits are traceable and can't be re-minted for the same land.

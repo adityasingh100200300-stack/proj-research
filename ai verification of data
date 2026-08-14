@@ -1,4 +1,10 @@
 Biomass estimation: Train a regression model (Random Forest or a CNN like U-Net) on NDVI/canopy-height time series to estimate above-ground biomass change — this is the standard remote-sensing carbon MRV (Measurement, Reporting, Verification) approach.
+
+
 Fraud/anomaly detection: Compare claimed project boundaries against actual imagery-detected vegetation change; flag mismatches, "double-counting" (same land registered twice), or edited imagery using an isolation forest or autoencoder trained on legitimate project patterns.
+
+
 Stack: Python, TensorFlow/PyTorch, rasterio/geopandas for geospatial preprocessing. Serve inference via a FastAPI microservice.
+
+
 Output: a verified "tonnes CO2 sequestered" number with a confidence score, which becomes the input to minting.

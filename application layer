@@ -1,3 +1,7 @@
 Next.js dashboard: project registration (upload land boundary + docs), a trading/marketplace view (wallet connect via wagmi/RainbowKit), and a MoES regulator view with elevated permissions to audit/freeze suspicious projects.
 Backend: Node/Express or use Next.js API routes talking to both the ML service and the blockchain (via ethers.js/web3.py).
 Auth: role-based (project owner, buyer, regulator) — probably NextAuth with a custom RBAC layer.
+
+
+
+Suggested build order for an MVP: get Sentinel Hub NDVI pipeline working first (it's pure data, no ML needed to start) → basic biomass regression model → simple Polygon testnet contract for minting → bare-bones dashboard that ties them together. That's the fastest path to an end-to-end demo.

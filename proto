@@ -1,15 +1,27 @@
 ​Here is exactly how you prototype this, step-by-step. Focus only on the "Happy Path"—the journey of one single mangrove forest turning into one verifiable digital token.
+
+
+
 ​Step 1: The "Brain" (Simulated MRV)
 ​Do not try to build a complex AI that parses live satellite data. You will run out of time.
 Instead, fire up your code editor and spin up a simple local Python server using Flask or FastAPI. Write a script that takes an uploaded aerial photo, uses a basic library like OpenCV to calculate the percentage of "green pixels," and spits out a simple "Biomass Score." As long as an image goes in and a mathematically consistent number comes out, your "AI" is good enough to show the judges the logic.
+
+
+
 ​Step 2: The "Ledger" (Blockchain)
 ​Do not get tangled in complex, enterprise-grade blockchain deployments.
 Write a single, simple Smart Contract using Solidity. Run a local test network right on your machine (using tools like Hardhat or Ganache). Your contract only needs to do one thing: it needs a function that takes that Biomass Score and mints a digital token to an account address. That is your carbon credit.
+
+
+
 ​Step 3: The "Bridge" (Integration)
 ​Your Python server needs to talk to your local blockchain. You can use a library like web3.py to do this easily. The logic is a straight line:
 ​The server receives the image.
 ​The server calculates the score.
 ​The server immediately triggers the smart contract to issue the token on the blockchain.
+
+
+
 ​Step 4: The "Face" (The Dashboard)
 ​Judges need something clean to look at. Build a simple web page. It only needs three things:
 ​A button to upload the "satellite" image.
